@@ -125,7 +125,7 @@
 				<div class="row align-items-center">
 					<div class="col-12 text-center">
 						<h1 class="wow fadeInUp" data-wow-delay="0.2s">Brutus.finance <br>Automatizamos tus finanzas</h1>
-						<p class="text text-primary wow fadeInUp" data-wow-delay="0.4s">Descubre una nueva era de finanzas automatizadas con Brutus Finance.</p>
+						<p class="text text-primary wow fadeInUp" data-wow-delay="0.4s">Descubre la nueva era de finanzas automatizadas con Brutus Finance.</p>
 						<ul class="image-before">
 							<li class="left-img"><img src="images/home-banner/img1.png" alt=""></li>
 							<li class="right-img"><img src="images/home-banner/img2.png" alt=""></li>
@@ -157,8 +157,8 @@
 								<div class="icon-content">
 									<ul class="price">
 										<li>
-											<h6 class="mb-0 amount">13,01 USDT</h6>
-											<span class="text-green percentage">+0.62%</span>
+											<h6 class="mb-0 amount" id="price-brut">13,01 USDT</h6>
+											<span class="text-green percentage" id="price-brut-change">+0.62%</span>
 										</li>
 										<li>
 											<span>Precio</span>
@@ -181,8 +181,8 @@
 								<div class="icon-content">
 									<ul class="price">
 										<li>
-											<h6 class="mb-0 amount">1.243618 TRX</h6>
-											<span class="text-green percentage">0.1064%</span>
+											<h6 class="mb-0 amount" id="price-brst">1.243618 TRX</h6>
+											<span class="text-green percentage" id="price-change">0.1064%</span>
 										</li>
 										<li>
 											<span>Precio</span>
@@ -399,5 +399,52 @@
 <script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
 <script src="vendor/wow/wow.js"></script><!-- WOW.JS -->
 <script src="js/custom.js"></script><!-- CUSTOM JS -->
+
+<script type="text/javascript">
+
+	var API = "https://chainlist.tk/";
+
+	function consulta(){
+		var apiUrl = API+'api/v1/precio/BRUT';
+		fetch(apiUrl)
+		.then(response => {return response.json();})
+		.then(data => {
+			
+			var price = data.Data.usd;
+			document.getElementById("precio-brut").innerHTML = "$"+price+" USDT";
+		}).catch(err => {
+			console.log(err);
+			document.getElementById("precio-brut").innerHTML = "$##.## USDT";
+		
+		});
+	}
+
+	function consulta2(){
+		var apiUrl = API+'api/v1/precio/BRST';
+		fetch(apiUrl).then(response => {return response.json();})
+		.then(data => {
+			
+			var price = data.Data.trx;
+
+			document.getElementById("precio-brst").innerHTML = price+" TRX";
+		}).catch(err => {
+			console.log(err);
+			document.getElementById("precio-brst").innerHTML = "##.## TRX";
+		
+		});
+	}
+
+	consulta2();
+	consulta();
+
+	setInterval(() => {
+		consulta2();
+		consulta();
+	}, 5000);
+		
+		
+
+
+</script>
 </body>
 </html>
