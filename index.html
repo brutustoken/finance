@@ -157,7 +157,7 @@
 								<div class="icon-content">
 									<ul class="price">
 										<li>
-											<h6 class="mb-0 amount" id="price-brut">13,01 USDT</h6>
+											<h6 class="mb-0 amount" id="price-brut">--.-- USDT</h6>
 											<span class="text-green percentage" id="price-brut-change">+0.62%</span>
 										</li>
 										<li>
@@ -181,7 +181,7 @@
 								<div class="icon-content">
 									<ul class="price">
 										<li>
-											<h6 class="mb-0 amount" id="price-brst">1.243618 TRX</h6>
+											<h6 class="mb-0 amount" id="price-brst">-.----- TRX</h6>
 											<span class="text-green percentage" id="price-change">0.1064%</span>
 										</li>
 										<li>
@@ -411,10 +411,10 @@
 		.then(data => {
 			
 			var price = data.Data.usd;
-			document.getElementById("precio-brut").innerHTML = "$"+price+" USDT";
+			document.getElementById("price-brut").innerHTML = "$"+price+" USDT";
 		}).catch(err => {
 			console.log(err);
-			document.getElementById("precio-brut").innerHTML = "$##.## USDT";
+			document.getElementById("price-brut").innerHTML = "$##.## USDT";
 		
 		});
 	}
@@ -425,11 +425,10 @@
 		.then(data => {
 			
 			var price = data.Data.trx;
-
-			document.getElementById("precio-brst").innerHTML = price+" TRX";
+			document.getElementById("price-brst").innerHTML = price+" TRX";
 		}).catch(err => {
 			console.log(err);
-			document.getElementById("precio-brst").innerHTML = "##.## TRX";
+			document.getElementById("price-brst").innerHTML = "##.## TRX";
 		
 		});
 	}
