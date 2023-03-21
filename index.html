@@ -412,6 +412,13 @@
 			
 			document.getElementById("price-brut").innerHTML = "$"+data.Data.usd+" USDT";
 			document.getElementById("price-brut-change").innerHTML = (data.Data.v24h).toFixed(4)+"%";
+			if(data.Data.v24h <= 0){
+				document.getElementById("price-brut-change").className = "text-red"
+			}else{
+				document.getElementById("price-brut-change").className = "text-green"
+
+			}
+			
 
 			
 		}).catch(err => {
@@ -430,6 +437,12 @@
 			
 			document.getElementById("price-brst").innerHTML = data.Data.trx+" TRX";
 			document.getElementById("price-brst-change").innerHTML = (data.Data.v24h).toFixed(4)+"%";
+			if(data.Data.v24h <= 0){
+				document.getElementById("price-brst-change").className = "text-red"
+			}else{
+				document.getElementById("price-brst-change").className = "text-green"
+
+			}
 		}).catch(err => {
 			console.log(err);
 			//document.getElementById("price-brst").innerHTML = "##.## TRX";
