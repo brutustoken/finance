@@ -158,7 +158,7 @@
 									<ul class="price">
 										<li>
 											<h6 class="mb-0 amount" id="price-brut">--.-- USDT</h6>
-											<span class="text-green percentage" id="price-brut-change">+0.62%</span>
+											<span class="text-green percentage" id="price-brut-change">+0.00%</span>
 										</li>
 										<li>
 											<span>Precio</span>
@@ -182,7 +182,7 @@
 									<ul class="price">
 										<li>
 											<h6 class="mb-0 amount" id="price-brst">-.----- TRX</h6>
-											<span class="text-green percentage" id="price-change">0.1064%</span>
+											<span class="text-green percentage" id="price-brst-change">0.0000%</span>
 										</li>
 										<li>
 											<span>Precio</span>
@@ -405,30 +405,49 @@
 	var API = "https://chainlist.tk/";
 
 	function consulta(){
-		var apiUrl = API+'api/v1/precio/BRUT';
+		var apiUrl = API+'api/v1/precio/brut';
 		fetch(apiUrl)
 		.then(response => {return response.json();})
 		.then(data => {
 			
-			var price = data.Data.usd;
-			document.getElementById("price-brut").innerHTML = "$"+price+" USDT";
+			document.getElementById("price-brut").innerHTML = "$"+data.Data.usd+" USDT";
+			document.getElementById("price-brut-change").innerHTML = (data.Data.v24h).toFixed(4)+"%";
+			if(data.Data.v24h <= 0){
+				document.getElementById("price-brut-change").className = "text-red"
+			}else{
+				document.getElementById("price-brut-change").className = "text-green"
+
+			}
+			
+
+			
 		}).catch(err => {
 			console.log(err);
-			document.getElementById("price-brut").innerHTML = "$##.## USDT";
+			//document.getElementById("price-brut").innerHTML = "$##.## USDT";
+			//document.getElementById("price-brut-change").innerHTML = "##.##%";
+
 		
 		});
 	}
 
 	function consulta2(){
-		var apiUrl = API+'api/v1/precio/BRST';
+		var apiUrl = API+'api/v1/precio/brst';
 		fetch(apiUrl).then(response => {return response.json();})
 		.then(data => {
 			
-			var price = data.Data.trx;
-			document.getElementById("price-brst").innerHTML = price+" TRX";
+			document.getElementById("price-brst").innerHTML = data.Data.trx+" TRX";
+			document.getElementById("price-brst-change").innerHTML = (data.Data.v24h).toFixed(4)+"%";
+			if(data.Data.v24h <= 0){
+				document.getElementById("price-brst-change").className = "text-red"
+			}else{
+				document.getElementById("price-brst-change").className = "text-green"
+
+			}
 		}).catch(err => {
 			console.log(err);
-			document.getElementById("price-brst").innerHTML = "##.## TRX";
+			//document.getElementById("price-brst").innerHTML = "##.## TRX";
+			//document.getElementById("price-brst-change").innerHTML = "##.##%";
+
 		
 		});
 	}
