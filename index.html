@@ -50,7 +50,7 @@
 
 					<!-- Website Logo -->
 					<div class="logo-header">
-						<a href="index.html" class="logo-dark"><img src="images/logo.png" alt=""></a>
+						<a href="index.html" class="logo-dark"><img src="images/logo.png" width="100%" alt=""></a>
 						<a href="index.html" class="logo-light"><img src="images/logo-white.png" alt=""></a>
 					</div>
 					
@@ -74,7 +74,7 @@
 						
 						<!-- Mobile Sidebar Logo -->
 						<div class="logo-header mostion">
-							<a href="index.html" class="logo-dark"><img src="images/logo.png" alt=""></a>
+							<a href="index.html" class="logo-dark"><img src="images/logo.png" style="height: 45px !important;"  alt=""></a>
 						</div>
 						
 						<!-- Navbar nav -->
@@ -86,7 +86,7 @@
 									<li><a href="https://dapp.brutus.finance/?brut">BRUT</a></li>
 									<li><a href="https://dapp.brutus.finance/?brst">BRST</a></li>
 									<li><a href="https://dapp.brutus.finance/?brgy">BRGY</a></li>
-									<li><a href="https://t.me/BRUTUS_ENERGY">Brutus enrgy bot</a></li>
+									<li><a href="https://t.me/BRUTUS_ENERGY">Brutus Energy bot</a></li>
 									<li><a href="https://dapp.brutus.finance/?brlt">BRLT</a></li>
 								</ul>
 							</li>
@@ -96,9 +96,14 @@
 						<div class="header-bottom">
 							<div class="dz-social-icon">
 								<ul>
+									<li><a class="btn btn-primary btn-gradient btn-shadow" target="_blank" href="https://dapp.brutus.finance/">Dapp</a></li>
 									<li><a target="_blank" class="fab fa-facebook-f" href="https://www.facebook.com/profile.php?id=100070323541015"></a></li>
+<<<<<<< HEAD
 									<li><a target="_blank" class="fab fa-twitter" href="https://twitter.com/Brutusfinance?t=uDzLzLblbko8DzJGDgZzDg&s=09"></a></li>
 									<li><a target="_blank" class="fab fa-linkedin-in" href="https://www.linkedin.com/"></a></li>
+=======
+									<li><a target="_blank" class="fab fa-twitter" href="https://twitter.com/BrutusToken"></a></li>
+>>>>>>> ee2293bf3a71fb87cb0623228a73511f0d0f8920
 									<li><a target="_blank" class="fab fa-instagram" href="https://www.instagram.com/brutus.finance/"></a></li>
 								</ul>
 							</div>	
@@ -303,7 +308,7 @@
 							</a>
 							</div>
 							<div class="icon-content">
-								<h4 class="title">Brutus Lottery (BRLT) Cooming Soon...</h4>
+								<h4 class="title">Brutus Lottery (BRLT) Próximamente...</h4>
 								<p class="m-b0">Brutus Lottery es una lotería segura en la que la inversión está garantizada y el ganador recibirá generadas por el pool, obtenidas a través del alquiler de energía y staking a interés compuesto.</p>
 							</div>
 						</div>
@@ -323,7 +328,6 @@
 	
 	<!-- Footer -->
 	<footer class="site-footer style-1" id="footer">
-		<img class="bg-shape1" src="images/home-banner/shape1.png" alt="">
 
 		<div class="footer-top background-luminosity" style="background-image: url(images/background/bg1.jpg)">
 			<div class="container">
@@ -336,10 +340,10 @@
 							<p>Brutus Finance se enfoca en desarrollar productos financieros automatizados en la blockchain de Tron que utilizan estrategias de colateralización de tokens para ayudar a reducir la dependencia del precio del mercado.</p>
 							<div class="dz-social-icon transparent space-10">
 								<ul>
-									<li><a target="_blank" class="fab fa-facebook-f" href="https://www.facebook.com/"></a></li>
-									<li><a target="_blank" class="fab fa-instagram" href="https://www.instagram.com/"></a></li>
-									<li><a target="_blank" class="fab fa-twitter" href="https://twitter.com/"></a></li>
-									<li><a target="_blank" class="fab fa-youtube" href="https://youtube.com/"></a></li>
+									<li><a target="_blank" class="fab fa-facebook-f" href="https://www.facebook.com/profile.php?id=100070323541015"></a></li>
+									<li><a target="_blank" class="fab fa-instagram" href="https://www.instagram.com/brutus.finance/"></a></li>
+									<li><a target="_blank" class="fab fa-twitter" href="https://twitter.com/BrutusToken"></a></li>
+									<li><a target="_blank" class="fab fa-youtube" href="https://www.youtube.com/@brutus.finance"></a></li>
 								</ul>
 							</div>
 						</div>
@@ -422,7 +426,7 @@
 			
 			document.getElementById("price-brut").innerHTML = "$"+data.Data.usd+" USDT";
 			document.getElementById("price-brut-change").innerHTML = (data.Data.v24h).toFixed(4)+"%";
-			if(data.Data.v24h <= 0){
+			if(data.Data.v24h < 0){
 				document.getElementById("price-brut-change").className = "text-red"
 			}else{
 				document.getElementById("price-brut-change").className = "text-green"
@@ -447,7 +451,7 @@
 			
 			document.getElementById("price-brst").innerHTML = data.Data.trx+" TRX";
 			document.getElementById("price-brst-change").innerHTML = (data.Data.v24h).toFixed(4)+"%";
-			if(data.Data.v24h <= 0){
+			if(data.Data.v24h < 0){
 				document.getElementById("price-brst-change").className = "text-red"
 			}else{
 				document.getElementById("price-brst-change").className = "text-green"
