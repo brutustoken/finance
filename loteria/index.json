@@ -22,7 +22,7 @@
     },
     "image":{
       "type": "string",
-      "description": "https://brutustoken.com/nft/loteria/image.gif"
+      "description": "https://brutustoken.com/nft/loteria/video.mp4"
     },
     "created_at": {
       "type": "datetime",
