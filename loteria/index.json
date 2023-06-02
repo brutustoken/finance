@@ -1,14 +1,14 @@
 {
   "title": "Ticket",
   "name": "Ticket de lotería",
-  "image": "https://nft.brutustoken.com/loteria/lottery_blanco.gif",
-  "fileUrl": "https://nft.brutustoken.com/loteria/image.gif",
-"description": "Este NFT verifica que el titular del mismo es un \"certified provider\" de Brutus Energy.\n This NFT verifies that the holder of the NFT is a \"certified supplier\" of Brutus Energy.",
-  "externalLink": "https://brutustoken.com",
+  "image": "https://nft.brutus.finance/loteria/lottery_blanco.gif",
+  "fileUrl": "https://nft.brutus.finance/loteria/image.gif",
+  "description": "Con este tiket participas de la loteria que tiene como premio las ganancias generadas por la participacion en BRST de todos los participantes, se realiza el sorteo cada 15 dias, puedes hacer el seguimiento en https://dapp.brutus.finance/?brlt",
+  "externalLink": "https://brutus.finance",
   "attributes": [
     {
       "trait_type": "Creator",
-      "value": "Xiz Art"
+      "value": "brutus.finance"
     }
   ],
   "properties": {
