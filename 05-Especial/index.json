@@ -11,12 +11,20 @@
       "value": "Xiz Art"
     },
     {
-      "trait_type": "Rareza",
-      "value": "Especial"
+      "trait_type": "Rarity",
+      "value": "Ultra Premium"
     },
     {
-      "trait_type": "Nacionalidad",
-      "value": "España"
+      "trait_type": "Nationality",
+      "value": "Spanish"
+    },
+    {
+      "trait_type": "VMG Inicial",
+      "value": "12.500.000 APENFT"
+    },
+    {
+      "trait_type": "VMG",
+      "value": "12.500.000 APENFT"
     }
   ],
   "properties": {
