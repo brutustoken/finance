@@ -7,24 +7,24 @@
   "externalLink": "https://brutus.finance",
   "attributes": [
     {
-      "trait_type": "Creator",
-      "value": "Xiz Art"
-    },
-    {
       "trait_type": "Rarity",
       "value": "Ultra Premium"
     },
     {
-      "trait_type": "Nationality",
-      "value": "Spanish"
+      "trait_type": "VMG",
+      "value": "12.500.000 APENFT"
     },
     {
       "trait_type": "VMG Inicial",
       "value": "12.500.000 APENFT"
     },
     {
-      "trait_type": "VMG",
-      "value": "12.500.000 APENFT"
+      "trait_type": "Nationality",
+      "value": "Spanish"
+    },
+    {
+      "trait_type": "Creator",
+      "value": "Xiz Art"
     }
   ],
   "properties": {
