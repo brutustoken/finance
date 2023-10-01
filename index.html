@@ -3,71 +3,6 @@
 
 <head>
 
-    <script type="text/javascript">
-
-        var API = "https://brutusservices.com/";
-
-        function consulta() {
-            var apiUrl = API + 'api/v1/precio/brut';
-            fetch(apiUrl)
-                .then(response => { return response.json(); })
-                .then(data => {
-
-                    document.getElementById("price-brut").innerHTML = "$" + data.Data.usd + " USDT";
-                    document.getElementById("price-brut-change").innerHTML = (data.Data.v24h).toFixed(4) + "%";
-                    if (data.Data.v24h < 0) {
-                        document.getElementById("price-brut-change").className = "text-red"
-                    } else {
-                        document.getElementById("price-brut-change").className = "text-green"
-
-                    }
-
-
-
-                }).catch(err => {
-                    console.log(err);
-                    //document.getElementById("price-brut").innerHTML = "$##.## USDT";
-                    //document.getElementById("price-brut-change").innerHTML = "##.##%";
-
-
-                });
-        }
-
-        function consulta2() {
-            var apiUrl = API + 'api/v1/precio/brst';
-            fetch(apiUrl).then(response => { return response.json(); })
-                .then(data => {
-
-                    document.getElementById("price-brst").innerHTML = data.Data.trx + " TRX";
-                    document.getElementById("price-brst-change").innerHTML = (data.Data.v24h).toFixed(4) + "%";
-                    if (data.Data.v24h < 0) {
-                        document.getElementById("price-brst-change").className = "text-red"
-                    } else {
-                        document.getElementById("price-brst-change").className = "text-green"
-
-                    }
-                }).catch(err => {
-                    console.log(err);
-                    //document.getElementById("price-brst").innerHTML = "##.## TRX";
-                    //document.getElementById("price-brst-change").innerHTML = "##.##%";
-
-
-                });
-        }
-
-        consulta2();
-        consulta();
-
-        setInterval(() => {
-            consulta2();
-            consulta();
-        }, 5000);
-
-
-
-
-    </script>
-
     <!-- Hotjar Tracking Code for Inicio Brutus -->
     <script>
         (function (h, o, t, j, a, r) {
@@ -80,7 +15,17 @@
         })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
     </script>
 
-    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NRBVWBDBSB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-NRBVWBDBSB');
+    </script>
+
+
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -554,6 +499,71 @@
     <script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
     <script src="vendor/wow/wow.js"></script><!-- WOW.JS -->
     <script src="js/custom.js"></script><!-- CUSTOM JS -->
+
+    <script type="text/javascript">
+
+        var API = "https://brutusservices.com/";
+
+        function consulta() {
+            var apiUrl = API + 'api/v1/precio/brut';
+            fetch(apiUrl)
+                .then(response => { return response.json(); })
+                .then(data => {
+
+                    document.getElementById("price-brut").innerHTML = "$" + data.Data.usd + " USDT";
+                    document.getElementById("price-brut-change").innerHTML = (data.Data.v24h).toFixed(4) + "%";
+                    if (data.Data.v24h < 0) {
+                        document.getElementById("price-brut-change").className = "text-red"
+                    } else {
+                        document.getElementById("price-brut-change").className = "text-green"
+
+                    }
+
+
+
+                }).catch(err => {
+                    console.log(err);
+                    //document.getElementById("price-brut").innerHTML = "$##.## USDT";
+                    //document.getElementById("price-brut-change").innerHTML = "##.##%";
+
+
+                });
+        }
+
+        function consulta2() {
+            var apiUrl = API + 'api/v1/precio/brst';
+            fetch(apiUrl).then(response => { return response.json(); })
+                .then(data => {
+
+                    document.getElementById("price-brst").innerHTML = data.Data.trx + " TRX";
+                    document.getElementById("price-brst-change").innerHTML = (data.Data.v24h).toFixed(4) + "%";
+                    if (data.Data.v24h < 0) {
+                        document.getElementById("price-brst-change").className = "text-red"
+                    } else {
+                        document.getElementById("price-brst-change").className = "text-green"
+
+                    }
+                }).catch(err => {
+                    console.log(err);
+                    //document.getElementById("price-brst").innerHTML = "##.## TRX";
+                    //document.getElementById("price-brst-change").innerHTML = "##.##%";
+
+
+                });
+        }
+
+        consulta2();
+        consulta();
+
+        setInterval(() => {
+            consulta2();
+            consulta();
+        }, 5000);
+
+
+
+
+    </script>
 
     
 
