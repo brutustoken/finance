@@ -179,75 +179,83 @@
 							<div class="blog-single dz-card sidebar">
 								<div class="dz-media dz-media-rounded">
 								</div>
+								<div class="col-xl-6 col-lg-12">
+									<div class="card">
+										<div class="card-header">
+											<h4 class="card-title">Checkbox</h4>
+										</div>
+										<div class="card-body">
+											<div class="row">
+												<div class="col-xl-4 col-xxl-6 col-6">
+													<div class="form-check custom-checkbox mb-3">
+														<input type="checkbox" class="form-check-input" id="customCheckBox1" required>
+														<label class="form-check-label" for="customCheckBox1">Active Provider</label>
+													</div>
+												</div>
+												<div class="col-xl-4 col-xxl-6 col-6">
+													<div class="form-check custom-checkbox mb-3 checkbox-info">
+														<input type="checkbox" class="form-check-input" checked id="customCheckBox2" required>
+														<label class="form-check-label" for="customCheckBox2">Elegible Provider</label>
+													</div>
+												</div>
+												<div class="col-xl-4 col-xxl-6 col-6">
+													<div class="form-check custom-checkbox mb-3 checkbox-success">
+														<input type="checkbox" class="form-check-input" checked id="customCheckBox3" required>
+														<label class="form-check-label" for="customCheckBox3">Bandwidth selling</label>
+													</div>
+												</div>
+												<div class="col-xl-4 col-xxl-6 col-6">
+													<div class="form-check custom-checkbox mb-3 checkbox-warning">
+														<input type="checkbox" class="form-check-input" checked id="customCheckBox4" required>
+														<label class="form-check-label" for="customCheckBox4">Autofreeze</label>
+													</div>
+												</div>
+												<div class="col-xl-4 col-xxl-6 col-6">
+													<div class="form-check custom-checkbox mb-3 checkbox-danger">
+														<input type="checkbox" class="form-check-input" checked id="customCheckBox5" required>
+														<label class="form-check-label" for="customCheckBox5">Trx Brun</label>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-6 col-lg-3">
+									<div class="card">
+										<div class="card-header">
+											<h4 class="card-title">Max days for buy orders</h4>
+										</div>
+										<div class="card-body">
+											<div class="basic-form">
+												<form>
+													<div class="row align-items-center">
+														<div class="col-xl-6 my-1">
+															<label class="me-sm-2">Preference</label>
+															<select class="me-sm-2 default-select form-control wide" id="inlineFormCustomSelect">
+																<option selected>Choose...</option>
+																<option value="1">3 days or less</option>
+																<option value="2">4-5 days</option>
+																<option value="3">6-7 days</option>
+																<option value="3">8-14 days</option>
+															</select>
+														</div>
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
 								<div class="col-xl-12">
 										<div class="card">
 											<div class="card-body pb-0">
 												<div class="d-flex flex-wrap">
-													<div class="col-xl-6">
-														<span class="badge rounded-pill bg-primary">WALLET</span>
-													</div>
-												<div class="form-check">
-														<input class="form-check-input" style="margin-right: 25px" type="checkbox" value="" id="flexCheckDefault">
-														<label class="form-check-label" style="margin-right: 25px" for="flexCheckDefault">
-														  Casilla de verificación por defecto
-														</label>
-												</div>
-													  <div class="form-check">
-														<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-														<label class="form-check-label" for="flexCheckDefault">
-														  Casilla de verificación por defecto
-														</label>
-													  </div>
-													  <div class="form-check">
-														<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-														<label class="form-check-label" for="flexCheckDefault">
-														  Casilla de verificación por defecto
-														</label>
-													  </div>
-													  <div class="form-check">
-														<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-														<label class="form-check-label" for="flexCheckDefault">
-														  Casilla de verificación por defecto
-														</label>
-													  </div>
-														<div class="input-group custom-search-area width-300 mb-">
-														<input type="text" class="form-control" placeholder="Enter Amount">
-													</div>
-													<select  class="default-select form-control p2p-select width-100 mb-2" aria-label="Default" tabindex="0">
-														<option>INR</option>
-														<option value="1">JPY</option>
-														<option value="2">KES</option>
-														<option value="3">KHR</option>
-														<option value="4">KWD</option>
-														<option value="5">KZT</option>
-														<option value="6">LAK</option>
-														<option value="7">LBP</option>
-														<option value="8">LKR</option>
-													</select>
-													<select  class="default-select form-control width-200" aria-label="Default" tabindex="0">
-														<option>All Payments</option>
-														<option value="1">UPI</option>
-														<option value="2">IMPS</option>
-														<option value="3">RTGS</option>
-														<option value="4">Gpay</option>
-														<option value="5">Paytm</option>
-														<option value="6">Phonepay</option>
-														<option value="7">Mokwikbi</option>
-													</select>
 												</div>
 											</div>
 											<div class="card-body">
 												<div class="tab-content" id="nav-tabContent1">
 													<div class="tab-pane fade show active" id="nav-buy" role="tabpanel" aria-labelledby="nav-buy-tab">
 														<div class="d-flex align-items-center justify-content-between">
-															<h4 class="heading">P2P: Buy</h4>
-															<nav>
-															  <div class="order nav nav-tabs" id="nav-tab" role="tablist">
-																<button class="nav-link active" id="nav-order-tab1" data-bs-toggle="tab" data-bs-target="#nav-order1" type="button" role="tab"  aria-selected="true">BTH</button>
-																<button class="nav-link" id="nav-histroy-tab1" data-bs-toggle="tab" data-bs-target="#nav-history1" type="button" role="tab"  aria-selected="false">ETH</button>
-																<button class="nav-link" id="nav-trade-tab1" data-bs-toggle="tab" data-bs-target="#nav-trade1" type="button" role="tab"  aria-selected="false">BNB</button>
-															  </div>
-															</nav>
+															<h4 class="heading">Ongoing deals</h4>
 														</div>
 														<div class="tab-content" id="nav-tabContent2">
 															<div class="tab-pane fade show active" id="nav-order1" role="tabpanel">
@@ -255,166 +263,105 @@
 																	<table id="example" class="table shadow-hover display" style="min-width:845px">
 																		<thead>
 																			<tr>
-																				<th>Date</th>
-																				<th>Pair</th>
-																				<th>Side</th>
-																				<th>Order</th>
-																				<th>Filled</th>
-																				<th>Price</th>
-																				<th>Total</th>
-																				<th class="text-end">Action</th>
+																				<th>Buyer</th>
+																				<th></th>
+																				<th>Resource</th>
+																				<th>Resource amonunt</th>
+																				<th>Order type</th>
+																				<th>Payout</th>
+																				<th>Undelegated Time</th>
 																			</tr>
 																		</thead>
 																		<tbody>
 																			<tr>
-																				<td>2022-10-03 16:24</td>
-																				<td>BTC/USDT</td>
-																				<td>Buy</td>
-																				<td>Limit</td>
-																				<td>-</td>
-																				<td>100.00</td>
-																				<td>576.76</td>
-																				<td>
-																					<div class=" text-end">
-																						<a href="#" class="btn btn-primary shadow btn-xs sharp me-3"><i class="fas fa-pencil-alt"></i></a>
-																						<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
-																					</div>												
-																				</td>
+																				<td>TWVVi4x2QNhRJyhqa7qrwM4aSXnXoUDDwY</td>
+																				<td></td>
+																				<td>Energy</td>
+																				<td>32000</td>
+																				<td>HOUR</td>
+																				<td>1.36</td>
+																				<td>13-10-2023 18:35:24</td>
 																			</tr>
 																			<tr>
-																				<td>2022-10-03 16:24</td>
-																				<td>BTC/USDT</td>
-																				<td>Buy</td>
-																				<td>Limit</td>
-																				<td>-</td>
-																				<td>100.00</td>
-																				<td>576.76</td>
-																				<td>
-																					<div class="text-end">
-																						<a href="#" class="btn btn-primary shadow btn-xs sharp me-3"><i class="fas fa-pencil-alt"></i></a>
-																						<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
-																					</div>												
-																				</td>
+																				<td>TWVVi4x2QNhRJyhqa7qrwM4aSXnXoUDDwY</td>
+																				<td></td>
+																				<td>Energy</td>
+																				<td>32000</td>
+																				<td>HOUR</td>
+																				<td>1.36</td>
+																				<td>13-10-2023 18:35:24</td>
 																			</tr>
 																			<tr>
-																				<td>2022-10-03 16:24</td>
-																				<td>BTC/USDT</td>
-																				<td>Buy</td>
-																				<td>Limit</td>
-																				<td>-</td>
-																				<td>100.00</td>
-																				<td>576.76</td>
-																				<td>
-																					<div class=" text-end">
-																						<a href="#" class="btn btn-primary shadow btn-xs sharp me-3"><i class="fas fa-pencil-alt"></i></a>
-																						<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
-																					</div>												
-																				</td>
+																				<td>TWVVi4x2QNhRJyhqa7qrwM4aSXnXoUDDwY</td>
+																				<td></td>
+																				<td>Energy</td>
+																				<td>32000</td>
+																				<td>HOUR</td>
+																				<td>1.36</td>
+																				<td>13-10-2023 18:35:24</td>
 																			</tr>
 																			<tr>
-																				<td>2022-10-03 16:24</td>
-																				<td>BTC/USDT</td>
-																				<td>Buy</td>
-																				<td>Limit</td>
-																				<td>-</td>
-																				<td>100.00</td>
-																				<td>576.76</td>
-																				<td>
-																					<div class=" text-end">
-																						<a href="#" class="btn btn-primary shadow btn-xs sharp me-3"><i class="fas fa-pencil-alt"></i></a>
-																						<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
-																					</div>												
-																				</td>
+																				<td>TWVVi4x2QNhRJyhqa7qrwM4aSXnXoUDDwY</td>
+																				<td></td>
+																				<td>Energy</td>
+																				<td>32000</td>
+																				<td>HOUR</td>
+																				<td>1.36</td>
+																				<td>13-10-2023 18:35:24</td>
 																			</tr>
 																			<tr>
-																				<td>2022-10-03 16:24</td>
-																				<td>BTC/USDT</td>
-																				<td>Buy</td>
-																				<td>Limit</td>
-																				<td>-</td>
-																				<td>100.00</td>
-																				<td>576.76</td>
-																				<td>
-																					<div class="text-end">
-																						<a href="#" class="btn btn-primary shadow btn-xs sharp me-3"><i class="fas fa-pencil-alt"></i></a>
-																						<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
-																					</div>												
-																				</td>
+																				<td>TWVVi4x2QNhRJyhqa7qrwM4aSXnXoUDDwY</td>
+																				<td></td>
+																				<td>Energy</td>
+																				<td>32000</td>
+																				<td>HOUR</td>
+																				<td>1.36</td>
+																				<td>13-10-2023 18:35:24</td>
 																			</tr>
 																			<tr>
-																				<td>2022-10-03 16:24</td>
-																				<td>BTC/USDT</td>
-																				<td>Buy</td>
-																				<td>Limit</td>
-																				<td>-</td>
-																				<td>100.00</td>
-																				<td>576.76</td>
-																				<td>
-																					<div class=" text-end">
-																						<a href="#" class="btn btn-primary shadow btn-xs sharp me-3"><i class="fas fa-pencil-alt"></i></a>
-																						<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
-																					</div>												
-																				</td>
+																				<td>TWVVi4x2QNhRJyhqa7qrwM4aSXnXoUDDwY</td>
+																				<td></td>
+																				<td>Energy</td>
+																				<td>32000</td>
+																				<td>HOUR</td>
+																				<td>1.36</td>
+																				<td>13-10-2023 18:35:24</td>
 																			</tr>
 																			<tr>
-																				<td>2022-10-03 16:24</td>
-																				<td>BTC/USDT</td>
-																				<td>Buy</td>
-																				<td>Limit</td>
-																				<td>-</td>
-																				<td>100.00</td>
-																				<td>576.76</td>
-																				<td>
-																					<div class=" text-end">
-																						<a href="#" class="btn btn-primary shadow btn-xs sharp me-3"><i class="fas fa-pencil-alt"></i></a>
-																						<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
-																					</div>												
-																				</td>
+																				<td>TWVVi4x2QNhRJyhqa7qrwM4aSXnXoUDDwY</td>
+																				<td></td>
+																				<td>Energy</td>
+																				<td>32000</td>
+																				<td>HOUR</td>
+																				<td>1.36</td>
+																				<td>13-10-2023 18:35:24</td>
 																			</tr>
 																			<tr>
-																				<td>2022-10-03 16:24</td>
-																				<td>BTC/USDT</td>
-																				<td>Buy</td>
-																				<td>Limit</td>
-																				<td>-</td>
-																				<td>100.00</td>
-																				<td>576.76</td>
-																				<td>
-																					<div class=" text-end">
-																						<a href="#" class="btn btn-primary shadow btn-xs sharp me-3"><i class="fas fa-pencil-alt"></i></a>
-																						<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
-																					</div>												
-																				</td>
+																				<td>TWVVi4x2QNhRJyhqa7qrwM4aSXnXoUDDwY</td>
+																				<td></td>
+																				<td>Energy</td>
+																				<td>32000</td>
+																				<td>HOUR</td>
+																				<td>1.36</td>
+																				<td>13-10-2023 18:35:24</td>
 																			</tr>
 																			<tr>
-																				<td>2022-10-03 16:24</td>
-																				<td>BTC/USDT</td>
-																				<td>Buy</td>
-																				<td>Limit</td>
-																				<td>-</td>
-																				<td>100.00</td>
-																				<td>576.76</td>
-																				<td>
-																					<div class=" text-end">
-																						<a href="#" class="btn btn-primary shadow btn-xs sharp me-3"><i class="fas fa-pencil-alt"></i></a>
-																						<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
-																					</div>												
-																				</td>
+																				<td>TWVVi4x2QNhRJyhqa7qrwM4aSXnXoUDDwY</td>
+																				<td></td>
+																				<td>Energy</td>
+																				<td>32000</td>
+																				<td>HOUR</td>
+																				<td>1.36</td>
+																				<td>13-10-2023 18:35:24</td>
 																			</tr>
 																			<tr>
-																				<td>2022-10-03 16:24</td>
-																				<td>BTC/USDT</td>
-																				<td>Buy</td>
-																				<td>Limit</td>
-																				<td>-</td>
-																				<td>100.00</td>
-																				<td>576.76</td>
-																				<td>
-																					<div class=" text-end">
-																						<a href="#" class="btn btn-primary shadow btn-xs sharp me-3"><i class="fas fa-pencil-alt"></i></a>
-																						<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
-																					</div>												
-																				</td>
+																				<td>TWVVi4x2QNhRJyhqa7qrwM4aSXnXoUDDwY</td>
+																				<td></td>
+																				<td>Energy</td>
+																				<td>32000</td>
+																				<td>HOUR</td>
+																				<td>1.36</td>
+																				<td>13-10-2023 18:35:24</td>
 																			</tr>
 																		</tbody>
 																	</table>
