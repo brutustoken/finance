@@ -2092,6 +2092,7 @@ textarea.form-control-lg {
 .input-group {
   position: relative;
   display: flex;
+  flex-direction: row-reverse;
   flex-wrap: wrap;
   align-items: stretch;
   width: 100%; }
@@ -9103,7 +9104,7 @@ svg.pulse-svg {
         width: 15.625rem; } }
     @media only screen and (max-width: 74.9375rem) {
       .header-right .search-area {
-        display: none; } }
+         } }
   .header-right .blur-img {
     position: absolute;
     left: 27%;
